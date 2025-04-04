@@ -45,6 +45,7 @@ h3 {
 p {
   font-size: 20px;
   font-weight: 500;
+  line-height: 1.7;
 }
 
 /* Special cases for headings */
@@ -196,9 +197,17 @@ h2 {
   text-align: center;
 }
 
+.services .header h2 {
+  margin-bottom: 15px;
+}
+
 .services .cards {
   display: inline-block;
   text-align: center;
+  margin-top: 50px;
+}
+
+.services .cards button {
   margin-top: 50px;
 }
 
@@ -235,6 +244,10 @@ h2 {
 
 .services .footer {
   margin-top: 50px;
+}
+
+.services .footer h2 {
+  margin-bottom: 20px;
 }
 
 .services .footer p {
@@ -285,6 +298,10 @@ h2 {
 .testimonial {
   background-color: #f9f6f7;
   text-align: center;
+}
+
+.testimonial h2 {
+  margin-top: 100px;
 }
 
 .testimonial p {
@@ -392,9 +409,17 @@ h2 {
   transform: scale(1.05);
 }
 
+.socials .card img {
+  cursor: pointer;
+  transition: all 0.5s ease;
+  border: 2px solid rgba(255, 0, 0, 0);
+  border-radius: 100%;
+}
+
 .socials .card img:hover {
   transform: scale(1.05);
-  cursor: pointer;
+  border: 2px solid #fc5d35;
+  border-radius: 100%;
 }
 .socials .card input {
   width: 80%;
