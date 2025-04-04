@@ -1,0 +1,424 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #333;
+}
+
+body {
+  background-color: #f9f6f7;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* ====== TYPOGRAPHY ====== */
+h1 {
+  font-size: 72px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 42px;
+  font-weight: 700;
+  text-align: center;
+
+}
+
+h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* Special cases for headings */
+.break h2 {
+  font-size: 150px;
+  font-weight: 900;
+  color: #f9f6f7;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* ====== UTILITY CLASSES ====== */
+.btn {
+  display: inline-block;
+  font-weight: 500;
+  color: #f9f6f7;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  font-size: 22px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.btn-primary {
+  background-color: #fc5d35;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+}
+
+.btn-secondary {
+  background-color: #333;
+}
+
+.btn-secondary:hover {
+  transform: scale(1.05);
+}
+
+/* start of navbar */
+.navbar {
+  padding: 10px 0;
+  background-color: #f9f6f7;
+  border-bottom: 1px solid #e3e3e3;
+  height: 80px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+  float: left;
+  margin-left: 50px;
+}
+.navbar .logo img,
+h2 {
+  display: inline-block;
+  vertical-align: middle;
+  align-content: center;
+}
+.navbar .logo h2 {
+  margin-left: 10px;
+  text-transform: uppercase;
+}
+
+.navbar .menu {
+  float: right;
+  margin-right: 50px;
+}
+.navbar .menu ul li {
+  display: inline-block;
+  border-left: 2px solid #a7a6a6;
+  vertical-align: middle;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.navbar .menu ul li:first-child {
+  border-left: none;
+}
+
+.navbar .menu ul li:last-child {
+  border-left: none;
+}
+
+.navbar .menu li a {
+  text-decoration: none;
+  margin-left: 20px;
+  margin-right: 20px;
+  transition: all 0.5s ease;
+  display: inline-block; /* Ensures transform works properly */
+}
+
+.navbar .menu li a:hover {
+  color: #fc5d35;
+  transform: scale(1.05);
+}
+
+.navbar .menu ul li img {
+  width: 50px;
+  height: 50px;
+  transition: all 0.5s ease;
+}
+
+.navbar .menu ul li img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* start of main section */
+.main {
+  height: 100vh;
+}
+
+.main .left-section {
+  float: left;
+  width: 48%;
+  height: 100%;
+}
+
+.main .left-section h1 {
+  margin-top: 15%;
+}
+
+.main .left-section p {
+  margin-top: 160px;
+  margin-bottom: 30px;
+}
+
+.main .left-section .btn-secondary {
+  margin-left: 35px;
+}
+
+.main .right-section {
+  float: right;
+  width: 48%;
+  margin-top: 150px;
+
+  text-align: right;
+}
+
+/* start of services */
+.services .header {
+  text-align: center;
+}
+
+.services .cards {
+  display: inline-block;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.services .cards .card {
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+  margin: 0 20px;
+  border: 2px solid #8f8f8f;
+  border-radius: 5px;
+  vertical-align: top;
+  height: 550px;
+  transition: all 0.5s ease;
+  
+  padding: 35px;
+}
+
+.services .cards .card:hover {
+  border-top: 10px solid #fc5d35;
+  border-radius: 5px;
+  transform: scale(1.05);
+}
+
+.services .cards .card img {
+  display: inline-block;
+  margin-top: 60px;
+  width: 70px;
+}
+
+.services .cards .card h3 {
+  color: #fc5d35;
+  margin-top: 20px;
+}
+
+.services .footer {
+  margin-top: 50px;
+}
+
+.services .footer p {
+  margin-bottom: 80px;
+}
+
+.services .left-section {
+  float: left;
+  width: 48%;
+  height: 100%;
+
+  text-align: left;
+
+  margin-bottom: 80px;
+}
+
+.services .left-section h2 {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.services .left-section p {
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.services .right-section {
+  float: right;
+  width: 48%;
+}
+
+/* start of break section */
+.break {
+  margin-top: 100px;
+  height: 600px;
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url(assets/tasty.png);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  align-content: center;
+}
+
+/* start of Testimonial */
+
+.testimonial {
+  background-color: #f9f6f7;
+  text-align: center;
+}
+
+/* .testimonial h2 {
+
+  margin-top: 100px;
+} */
+
+.testimonial p {
+  width: 70%;
+  margin: 30px auto;
+}
+
+.testimonial img {
+  width: 470px;
+}
+
+/* start of contact-us */
+.contact-us {
+  text-align: center;
+  margin-top: 150px;
+}
+
+.contact-us .left-section {
+  float: left;
+  width: 48%;
+  height: 100%;
+  text-align: left;
+}
+
+.contact-us .left-section input {
+  width: 80%;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  border-bottom: 2px solid #333;
+  background-color: transparent;
+  font-size: 20px;
+  font-weight: 500;
+  outline: none;
+}
+
+.contact-us .left-section input:focus {
+  border-bottom: 3px solid #fc5d35;
+}
+
+.contact-us .left-section input:nth-child(4) {
+  margin-top: 90px;
+}
+
+.contact-us .left-section button {
+  text-transform: uppercase;
+  display: block;
+}
+
+.contact-us .left-section input::placeholder {
+  color: #5e5e5e;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.contact-us .right-section {
+  float: right;
+  width: 48%;
+  margin-top: 100px;
+
+  text-align: right;
+}
+
+/* start of socials */
+.socials {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 700px;
+  width: 100%;
+}
+
+.socials .card {
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+  margin: 10px 20px;
+  border-radius: 5px;
+  vertical-align: top;
+  height: 380px;
+  transition: all 0.5s ease;
+  text-align: left;
+  margin-top: 50px;
+}
+
+.socials .card h3 {
+  margin-top: 20px;
+}
+
+.socials .card ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.socials .card ul li {
+  margin-top: 5px;
+  font-size: 22px;
+  font-weight: 400;
+
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.socials .card ul li:hover {
+  color: #fc5d35;
+  transform: scale(1.05);
+}
+
+.socials .card img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.socials .card input {
+  width: 80%;
+  padding: 10px;
+
+  border: none;
+  border: 1px solid #333;
+}
+
+.socials .card input:focus {
+  border: 2px solid #fc5d35;
+  outline: none;
+}
+
+/* start of footer */
+footer {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #efeded;
+}
