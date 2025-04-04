@@ -34,7 +34,6 @@ h2 {
   font-size: 42px;
   font-weight: 700;
   text-align: center;
-
 }
 
 h3 {
@@ -213,7 +212,7 @@ h2 {
   vertical-align: top;
   height: 550px;
   transition: all 0.5s ease;
-  
+
   padding: 35px;
 }
 
@@ -275,7 +274,7 @@ h2 {
   width: 100vw;
   left: 50%;
   transform: translateX(-50%);
-  background-image: url(assets/tasty.png);
+  background-image: url(../assets/tasty.png);
   background-size: cover;
   background-position: center;
   text-align: center;
